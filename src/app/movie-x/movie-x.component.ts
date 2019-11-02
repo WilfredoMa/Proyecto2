@@ -11,7 +11,7 @@ export class MovieXComponent implements OnInit {
 
   Id;
   movie;
-  seats=0;
+  seats=30;
   available;
   cmSoon;
 
@@ -32,12 +32,12 @@ export class MovieXComponent implements OnInit {
   }
 
   plusSeat(){
-    this.seats +=1;
+    this.seats -=1;
   }
 
   isFull(): boolean{
 
-    return this.seats>=30;
+    return this.seats===0;
 
   }
 

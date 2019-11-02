@@ -14,7 +14,9 @@ import { MoviesOffPipe } from './movies-off.pipe';
 import { FilterPipe } from './filter.pipe';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from '../environments/environment.prod';
+import { AdminComponent } from './admin/admin.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { environment } from 'src/environments/environment.prod';
     MoviesPipe,
     MoviesOffPipe,
     FilterPipe,
+    AdminComponent,
+    HeroComponent,
   ],
   imports: [
     BrowserModule,

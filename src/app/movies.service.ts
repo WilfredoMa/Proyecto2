@@ -249,7 +249,7 @@ export class MoviesService {
 
 
    addOrder(x){
-      this.db.collection('movies').add(x);
+      this.db.collection('Movies').add(x);
    }
 
 

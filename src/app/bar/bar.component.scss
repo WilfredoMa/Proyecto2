@@ -4,18 +4,29 @@
     display: grid;
     width: 100vw;
     height: 9vh;
-    grid-template-columns: 1fr 0.1fr 0.1fr 0.01fr;
+    grid-template-columns: 0.1fr 1fr 0.1fr 0.1fr;
     justify-items: center;
     align-items: center;
     position: relative;
 }
 
+.superWrapper{
+    position: fixed;
+    z-index: 1000;
+}
+
+.icon{
+    grid-column: 1/2;
+    left:0;
+    height: 60px;
+}
+
 .home{
-    grid-column: 2/3;
+    grid-column: 3/4;
 }
 
 .admin{
-    grid-column: 3/4;
+    grid-column: 4/5;
 }
 
 .home:hover,.admin:hover{

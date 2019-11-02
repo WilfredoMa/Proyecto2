@@ -1,0 +1,27 @@
+.wrapper{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 3em;
+    justify-items: center;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(209, 36, 36);
+    color: white;
+    padding: 30px;
+}
+
+h3{
+    color: white;
+}
+
+h4{
+    color: rgb(209, 36, 36);
+}
+
+p{
+    color: white;
+}

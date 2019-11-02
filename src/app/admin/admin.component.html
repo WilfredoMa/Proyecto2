@@ -1,0 +1,18 @@
+<app-bar></app-bar>
+<h1>ADMINISTRADOR</h1>
+
+<div class="wrapper">
+
+    <div *ngFor="let x of ordenes; let i=index">
+        <br>
+        <h3>Orden nro {{i+1}}:</h3>
+        <h4>Titulo de película: <p>{{x.nameMovie}}</p></h4>
+        <h4>Nombre del cliente: <p>{{x.nameCustomer}}</p></h4>
+        <h4>Nro. de tickets: <p>{{x.nrTickets}}</p> </h4>
+        <h4>Nro. de telefono: <p>{{x.phone}}</p> </h4>
+    </div>
+
+
+
+
+</div>

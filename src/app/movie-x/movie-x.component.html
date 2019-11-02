@@ -24,7 +24,7 @@
             <h2>Plot: <br> <p class="titulo">{{movie.Plot}}</p></h2>
             <br>
                    
-            <div *ngIf="available" (click)="plusSeat()" routerLink="/reserve" id="btn"><p>Reservar</p></div>
+            <div *ngIf="available" (click)="plusSeat()" [routerLink]="['/reserve', movie.Id]" id="btn"><p>Reservar</p></div>
             <div *ngIf="isFull()" id="btn2"><p>¡Agotado!</p></div>
             <div *ngIf="cmSoon" id="btn2"><p>Próximamente</p></div>
 
@@ -33,7 +33,7 @@
      
             <br>
 
-            <h5>Asientos disponibles: </h5>
+            <h5>Asientos disponibles: {{seats}} </h5>
     </div>
 </div>
 
