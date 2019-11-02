@@ -1,0 +1,31 @@
+.wrapper{
+
+    background-color: rgb(209, 36, 36);
+    display: grid;
+    width: 100vw;
+    height: 9vh;
+    grid-template-columns: 1fr 0.1fr 0.1fr 0.01fr;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.home{
+    grid-column: 2/3;
+}
+
+.admin{
+    grid-column: 3/4;
+}
+
+.home:hover,.admin:hover{
+    
+    transition: .4s;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,90 @@
+
+body{
+    background-color: black;
+}
+
+.wrapper{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3em;
+    justify-items: center;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+
+}
+
+.plot{
+    background-color: black;
+}
+
+.img{
+
+    height: 500px;
+
+}
+
+h1, h3, h5{
+    color: #fff;
+    text-align: center;
+}
+
+h2{
+    color: rgb(209, 36, 36);
+}
+
+
+.titles{
+    color: rgb(209, 36, 36);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin: auto;
+}
+
+.titulo{
+    color: #fff;
+    font-size: 15px;
+}
+
+#btn{
+
+    display: flex;
+    color: blanchedalmond;
+    background-color: rgb(163, 5, 5);
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    
+
+}
+
+#btn:hover{
+    transition: .4s;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blanchedalmond;
+
+}
+
+#btn2{
+    display: flex;
+    color: blanchedalmond;
+    background-color: rgb(163, 5, 5);
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    
+
+}

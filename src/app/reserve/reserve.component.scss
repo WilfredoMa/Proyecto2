@@ -1,0 +1,46 @@
+
+
+h1{
+    text-align: center;
+    background-color: rgb(209, 36, 36);
+    color: white;
+    padding: 30px;
+}
+
+.align{
+
+
+    color: white;
+    background-color: black;
+
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#btn{
+
+    display: flex;
+    color: blanchedalmond;
+    background-color: rgb(163, 5, 5);
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    
+
+}
+
+#btn:hover{
+    transition: .4s;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blanchedalmond;
+
+}

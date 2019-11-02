@@ -1,0 +1,43 @@
+<app-bar></app-bar>
+<div class="wrapper2">
+
+    <h1 id="tritri">Movies</h1>
+
+    <div [class.input]="Input" class="off">
+
+        <input type="search" [(ngModel)]="search">
+
+    </div>
+
+    <img class="icon" (click)="showInput()" src="assets/imgs/iconoLupa.png" alt="">
+
+</div>
+
+
+<div class="wrapper">
+
+    <div *ngFor="let m of (movies | moviesOn | filter:search)as folder">
+
+        <h3>{{m.Title}}</h3>
+        <app-images [movie]="m"></app-images>
+
+
+    </div>
+
+    <br>
+</div>
+
+
+<h1 id="idk">Próximos Estrenos <br></h1>
+
+<div class="wrapper">
+
+    <div *ngFor="let movie of movies | moviesOff">
+
+        <h3>{{movie.Title}}</h3>
+        <app-images [movie]="movie"></app-images>
+
+
+    </div>
+
+</div>

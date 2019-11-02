@@ -1,0 +1,40 @@
+
+<app-bar></app-bar>
+<div class="wrapper">
+
+    <img class="img" src="{{movie.Poster}}" alt="">
+
+    <div class="titles">
+
+        <h1>{{movie.Title}}</h1>
+        <br>
+        <h4>Duración: <p class="titulo">{{movie.Runtime}}</p></h4>
+        <h4>Clasificación: <p class="titulo">{{movie.Rated}}</p></h4>
+        <h4>Año: <p class="titulo">{{movie.Released}}</p></h4>
+        <h4>Género: <p class="titulo">{{movie.Genre}}</p></h4>
+        <h4>Director: <p class="titulo">{{movie.Director}}</p></h4>
+        <h4>Escritor/es: <p class="titulo">{{movie.Writer}}</p></h4>
+        <h4>Actores: <p class="titulo">{{movie.Actors}}</p></h4>
+        <h4>País: <p class="titulo">{{movie.Country}}</p> </h4>
+        <h4>Premios: <p class="titulo">{{movie.Awards}}</p></h4>
+        
+    </div>
+
+    <div class="plot">
+            <h2>Plot: <br> <p class="titulo">{{movie.Plot}}</p></h2>
+            <br>
+                   
+            <div *ngIf="available" (click)="plusSeat()" routerLink="/reserve" id="btn"><p>Reservar</p></div>
+            <div *ngIf="isFull()" id="btn2"><p>¡Agotado!</p></div>
+            <div *ngIf="cmSoon" id="btn2"><p>Próximamente</p></div>
+
+
+
+     
+            <br>
+
+            <h5>Asientos disponibles: </h5>
+    </div>
+</div>
+
+
